@@ -1,5 +1,5 @@
 {**
- * plugins/blocks/ListJournal/templates/block.tpl
+ * plugins/blocks/listJournal/templates/block.tpl
  *
  * Copyright (c) 2021, Abdul Rahim Universitas Dinamika Bangsa
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
@@ -42,7 +42,7 @@
 </style>
 <div class="pkp_block block_custom">
     <h2 class="title">
-        {translate key="plugins.block.ListJournal.blockTitle"}
+        {translate key="plugins.block.listJournal.blockTitle"}
     </h2>
     <div class="content block_journals">
         <ul class="list-group">

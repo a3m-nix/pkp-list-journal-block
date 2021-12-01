@@ -11,11 +11,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-msgid "plugins.block.ListJournal.blockTitle"
+msgid "plugins.block.listJournal.blockTitle"
 msgstr "JURNAL"
 
-msgid "plugins.block.ListJournal.description"
+msgid "plugins.block.listJournal.description"
 msgstr "Plugin ini menampilkan Daftar \"Jurnal\" pada blok sidebar."
 
-msgid "plugins.block.ListJournal.displayName"
+msgid "plugins.block.listJournal.displayName"
 msgstr "Blok \"Menampilkan Daftar Jurnal\""
