@@ -12,7 +12,6 @@
  *
  * @brief Class for the "Make a Submission" block plugin
  */
-import('lib.pkp.pages.index.PKPIndexHandler');
 import('lib.pkp.classes.plugins.BlockPlugin');
 
 class ListJournalBlockPlugin extends BlockPlugin
