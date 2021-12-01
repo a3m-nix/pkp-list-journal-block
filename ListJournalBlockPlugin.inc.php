@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @file plugins/blocks/makeSubmission/MakeSubmissionBlockPlugin.inc.php
+ * @file plugins/blocks/ListJournal/ListJournalBlockPlugin.inc.php
  *
- * Copyright (c) 2014-2020 Simon Fraser University
- * Copyright (c) 2003-2020 John Willinsky
+ * Copyright (c) 2021 Universitas Dinamika Bangsa
+ * Copyright (c) 2021 Abdul Rahim
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class MakeSubmissionBlockPlugin
