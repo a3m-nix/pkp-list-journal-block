@@ -42,7 +42,7 @@
 </style>
 <div class="pkp_block block_custom">
     <h2 class="title">
-        {translate key="plugins.block.listJournal.blockTitle"}
+        {translate key="plugins.block.ListJournal.blockTitle"}
     </h2>
     <div class="content block_journals">
         <ul class="list-group">

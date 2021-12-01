@@ -23,7 +23,7 @@ class ListJournalBlockPlugin extends BlockPlugin
      */
     public function getDisplayName()
     {
-        return __('plugins.block.listJournal.displayName');
+        return __('plugins.block.ListJournal.displayName');
     }
 
     /**
@@ -31,7 +31,7 @@ class ListJournalBlockPlugin extends BlockPlugin
      */
     public function getDescription()
     {
-        return __('plugins.block.listJournal.description');
+        return __('plugins.block.ListJournal.description');
     }
 
     /**
