@@ -30,52 +30,59 @@
         text-decoration: none;
     }
 
-    .journals_list {
-        border: 1px solid #ccc;
-    }
-
     .journals-issn {
         color: rgb(78, 71, 71);
         font-style: italic;
         font-size: 13px;
+    }
+
+    .thumb img {
+        width: 100%;
+    }
+
+    .list-group-item,
+    .pkp_block ul li {
+        border: 0px;
     }
 </style>
 <div class="pkp_block block_custom">
     <h2 class="title">
         {translate key="plugins.block.ListJournal.blockTitle"}
     </h2>
-    <div class="content block_journals">
+    <div class="content block_journals" style="padding-top: 2px;">
         <ul class="list-group">
             {foreach from=$myJournals item=journal}
                 {capture assign="url"}{url journal=$journal->getPath()}{/capture}
                 {assign var="thumb" value=$journal->getLocalizedData('journalThumbnail')}
                 {assign var="description" value=$journal->getLocalizedDescription()}
                 <li class="list-group-item d-flex journals_list">
-                    <div class="journals-image">
-                        {if $thumb}
-                            <div class="thumb">
+                    <div class="row">
+                        <div class="col-md-4" style="padding-right: 0px;padding-left:0px;">
+                            {if $thumb}
                                 <a href="{$url|escape}">
-                                    <img align="top"
+                                    <img class="img img-thumbnail"
                                         src="{$myJournalFilesPath}{$journal->getId()}/{$thumb.uploadName|escape:"url"}"
                                         {if $thumb.altText} alt="{$thumb.altText|escape|default:''}" {/if}>
                                 </a>
-                            </div>
-                        {/if}
-                    </div>
-                    <div class="journals-name">
-                        <a href="{$url|escape}" rel="bookmark">
-                            {$journal->getLocalizedName()}
-                            <br />
-                            <span class="journals-issn">
-                                {if $journal->getData('onlineIssn')}
-                                    e-ISSN: {$journal->getData('onlineIssn')}
-                                {/if}
-                                {if $journal->getData('printIssn')}
-                                    <br />
-                                    p-ISSN: {$journal->getData('printIssn')} </span>
                             {/if}
+                        </div>
+                        <div class="col-md-8 " style="padding-left: 6px;">
+                            <div class=" journals-name">
+                                <a href="{$url|escape}" rel="bookmark">
+                                    <b>{$journal->getLocalizedName()|strtoupper}</b>
+                                    <br />
+                                    <span class="journals-issn">
+                                        {if $journal->getData('onlineIssn')}
+                                            e-ISSN: {$journal->getData('onlineIssn')}
+                                        {/if}
+                                        {if $journal->getData('printIssn')}
+                                            <br />
+                                            p-ISSN: {$journal->getData('printIssn')} </span>
+                                    {/if}
 
-                        </a>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </li>
             {/foreach}
